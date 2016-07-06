@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Moblie Dev 101: Materials
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Mobile Dev 101: Materials
 
 In this file, we'll review the materials we provide to help you teach this workshop.
 
