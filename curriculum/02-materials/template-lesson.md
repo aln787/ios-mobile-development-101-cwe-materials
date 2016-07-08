@@ -10,11 +10,11 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Explain the field of data science, defining common roles, benefits, and trends.
-- Explore popular tools and resources to visualize and analyze data.
-- Recognize types of problems that can be solved by data scientists.
-- Apply the data science workflow and provide recommendations.
-- Create a custom learning plan to help you continue to build fundamental data science skills after this workshop.
+- Explain relevant history and trends in iOS development.
+- Identify key skills leveraged by IOS developers.
+- Survey the common tools used within the iOS ecosystem.
+- Apply key concepts and skills to build your own simple iOS application.
+- Create a custom learning plan to help you continue to build fundamental iOS development skills after this workshop.
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -51,7 +51,7 @@ creator:
 
 #### Instructor Bio
 
-Welcome to Data Science 101! Here's a bit about me:
+Welcome to iOS Development 101! Here's a bit about me:
 > Provide your name and brief bio. your background in iOS development, any experience you've had with GA, and one "fun fact" about yourself.
 
 #### Introduce Yourselves
