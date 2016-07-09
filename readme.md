@@ -1,6 +1,6 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Mobile Development 101
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Development 101
 
-Welcome to General Assembly's iOS Mobile Development 101. This repository contains all of the materials supplied for this workshop.
+Welcome to General Assembly's iOS Development 101. This repository contains all of the materials supplied for this workshop.
 
 ## Value Proposition
 
