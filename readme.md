@@ -12,9 +12,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- a bulleted list of learning goals from Confluence -->
 
-- Goal 1
-- Goal 2
-- Goal 3
+- Explain relevant history and trends in iOS development.
+- Identify key skills leveraged by IOS developers.
+- Survey the common tools used within the iOS ecosystem.
+- Apply key concepts and skills to build a basic iOS application.
 
 ---
 
