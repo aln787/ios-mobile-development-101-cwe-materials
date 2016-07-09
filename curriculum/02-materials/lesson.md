@@ -52,7 +52,7 @@ creator:
 #### Instructor Bio
 
 Welcome to iOS Development 101! Here's a bit about me:
-> Provide your name and brief bio. your background in iOS development, any experience you've had with GA, and one "fun fact" about yourself.
+> Provide your name and brief bio, including: your background in iOS development, any experience you've had with GA, and one "fun fact" about yourself.
 
 #### Introduce Yourselves
 
