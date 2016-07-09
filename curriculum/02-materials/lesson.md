@@ -13,7 +13,7 @@ creator:
 - Explain relevant history and trends in iOS development.
 - Identify key skills leveraged by IOS developers.
 - Survey the common tools used within the iOS ecosystem.
-- Apply key concepts and skills to build your own simple iOS application.
+- Apply key concepts and skills to build your own basic iOS application.
 - Create a custom learning plan to help you continue to build fundamental iOS development skills after this workshop.
 
 ### STUDENT PRE-WORK
