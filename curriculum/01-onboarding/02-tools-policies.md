@@ -35,7 +35,6 @@ It is also our experience that students should have laptops with screens of at l
 
 **PC/Linux:** Students are welcome to bring their own PC or Linux machines, but once again, we **cannot guarantee* tech support for these devices.**
 
-
 #### Questions? Issues?
 
 1. If you see elements you would like to add, improve, or change, please feel free to submit a **pull request** with your modifications! A member of our instructional team will make sure to review and merge applicable changes.
