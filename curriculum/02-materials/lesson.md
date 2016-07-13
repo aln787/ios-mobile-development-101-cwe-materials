@@ -11,7 +11,7 @@ creator:
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Explain relevant history and trends in iOS development.
-- Identify key skills leveraged by IOS developers.
+- Identify key skills leveraged by iOS developers.
 - Survey the common tools used within the iOS ecosystem.
 - Apply key concepts and skills to build your own basic iOS application.
 - Create a custom learning plan to help you continue to build fundamental iOS development skills after this workshop.
@@ -35,12 +35,12 @@ creator:
 | 20 min  | [Guided Practice](#guided-practice1)  | Navigate your iOS environment |
 | 20 min  | [Independent Practice](#ind-practice1)  | "Test" your iOS skills |
 | 5-10 min  | BREAK  |   |
-| 15 min  | [Introduction](#intro2)   | Learn Xcode Fundamentals |
+| 15 min  | [Introduction](#intro2)   | iOS Fundamentals: What Do You Need to Know?  |
 | 15 min  | [Demo](#demo2)  | Foundational Concepts in Your Xcode IDE |
-| 20 min  | [Guided Practice](#guided-practice2)  | Practice Xcode Fundamentals |
-| 20 min  | [Independent Practice](#ind-practice2)  | Apply Xcode Fundamentals |
+| 20 min  | [Guided Practice](#guided-practice2)  | Practice iOS Fundamentals |
+| 20 min  | [Independent Practice](#ind-practice2)  | Apply iOS Fundamentals |
 | 10 min  | [Conclusion](#conclusion) | Review + Recap |
-| 10 min  | [Takeaways](#takeaway) | Learning Plan + Q&A |
+| 10 min  | [Takeaways](#takeaway) | Learning Plan, Q&A |
 
 ---
 
