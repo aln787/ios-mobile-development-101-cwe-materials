@@ -7,15 +7,15 @@ Instead, General Assembly provides a core set of objectives for this workshop, a
 
 ## Required Tools
 
-- [Github](www.github.com) - We’re using Github to store and share our code
-- X
-- Y
+- A Mac laptop and *optional* iOS testing device.
+- Download and install the latest version of [Xcode](https://developer.apple.com/xcode/).
+- A thirst for knowledge!
+
 
 #### Optional Tools
 These tools aren't required, but offer additional functionality that students may find helpful!
 
 - Popular Text Editors: [Atom](https://atom.io) or [Sublime](http://www.sublimetext.com)
-
 
 
 ## Technology Policy
@@ -24,16 +24,13 @@ General Assembly introduces students to concepts using the environment, tools, a
 
 #### Laptop Policy
 
-We strongly suggest that everyone use Mac laptops, as most instructors will perform examples in (and use) Mac OS every day. In general, instructors will only be able to provide tech support for students with Macs. Please see our OS Policy below for further details.  
-
-It is also our experience that students should have laptops with screens of at least 13-inches. Having an 11-inch (or smaller) screen has been shown to adversely affect student performance.
+Due to the necessary tools used in the iOS environment, Macs are required for this workshop. We strongly suggest that students bring laptops with screens of at least 13-inches. Having an 11-inch (or smaller) screen has been shown to adversely affect student performance.
 
 
 #### Operating Systems Policy
 
-**Mac:** We require students using Mac laptops to be able to run at least Mac OS X 10.8 Mountain Lion or greater. *This rules out some older MacBooks*
+**Mac:** For those with Macs, you’ll need the Mac OS X 10.8.5 or higher, up to 10.11.4 (El Capitan). *This rules out some older MacBooks*
 
-**PC/Linux:** Students are welcome to bring their own PC or Linux machines, but once again, we **cannot guarantee* tech support for these devices.**
 
 #### Questions? Issues?
 
