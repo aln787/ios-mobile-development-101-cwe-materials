@@ -18,8 +18,9 @@ creator:
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Bring a Mac laptop and *optional* testing device.
-- Downloaded and install the latest version of [Xcode](#).
+* Bring a Mac laptop (*required*) and iOS testing device (*optional*).
+- Upgrade your OS to the latest version.
+- Download and install the latest version of [Xcode](https://developer.apple.com/xcode/).
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
