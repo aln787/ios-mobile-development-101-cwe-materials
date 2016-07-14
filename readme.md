@@ -1,24 +1,19 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Development 101
 
-Welcome to General Assembly's iOS Development 101. We're all really excited that you're joining our General Assembly community. 
+Welcome to General Assembly's iOS Development 101. We are building a global community of lifelong learners who are excited about developing mobile applications to solve real world problems, and we're really excited for you to join us!
 
-## Value Proposition
+## In This Repository
 
-Through our iOS Development Immersive, we are building a global community of lifelong learners who are excited about developing mobile applications to solve real world problems.
-
-In this repository, we provided a number of *required* and *optional* resources to prepare you for our course. In order to ensure your success in the course, we’ve assembled the following pre-course onboarding materials. These may take you between 20-40 hours to complete.
+We provide a number of *required* and *optional* resources to better prepare you for the course. Please complete **all** items **before** your first day of class, so that both you and your computer will be prepared to hit the ground running.
 
 ## To Get Started
-
-
-Please complete **all** items **before** your first day of class, so that both you and your computer will be prepared to hit the ground running. If you have questions in the meantime (or just want to say hi!), feel free to reach out to your admissions or course producer!
-
 
 Document                            | Description
 ----------------------------------- | ------------------------------------------
 [1. Complete our Onboarding Materials](./curriculum//01-onboarding/01-roadmap.md) | Required Pre-Course Tutorials & Assessments
 [2. Review our Tech Policies](./curriculum//01-onboarding/02-tools-policies.md) | GA's Technology Policy for this course
 
+Meanwhile, if you have questions in the meantime (or just want to say hi!), feel free to reach out to your admissions or course producer! You can also join our `#iosi-onboarding` channel on Slack to get help from and share tips with your peers!
 
 
 ## Licensing
