@@ -4,13 +4,16 @@ Welcome to General Assembly's iOS Development 101. This repository contains all 
 
 ## Value Proposition
 
-<!--  Taken from Confluence -->
+Have a great idea for an iOS app but no idea how to go about it? Want to learn more about the iOS ecosystem and how app development works? Curious about developing for iOS but confused by all the different tools required? Then this workshop is for you!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We’ll walk you through the industry standard tools used by iOS app developers, including Xcode (an integrated development environment), Swift (Apple’s open-source programming language), playground files, and more. 
+
+You’ll identify the fundamentals you’ll need to build to succeed as an iOS developer while learning how to navigate and assemble your own sample mobile app. 
+
+More importantly, you’ll build confidence in your ability to break down complex subject matter, understand industry trends in order to set goals, and chart your own path as a future iOS developer.
+
 
 #### Students Will Learn How To:
-
-<!-- a bulleted list of learning goals from Confluence -->
 
 - Explain relevant history and trends in iOS development.
 - Identify key skills leveraged by IOS developers.
