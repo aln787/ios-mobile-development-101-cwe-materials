@@ -22,7 +22,7 @@ More importantly, you’ll build confidence in your ability to break down comple
 
 ---
 
-Included in this repository:
+## Included in this repository:
 
 1. [**Onboarding Materials**](./curriculum/01-onboarding) - Background context & instructions for how to make use of our materials.
 
