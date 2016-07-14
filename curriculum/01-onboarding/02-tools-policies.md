@@ -7,7 +7,7 @@ Instead, General Assembly provides a core set of objectives for this workshop, a
 
 ## Required Tools
 
-- A Mac laptop and *optional* iOS testing device.
+- A Mac laptop (*required*) and an iOS device for testing (*optional*).
 - Download and install the latest version of [Xcode](https://developer.apple.com/xcode/).
 - A thirst for knowledge!
 
