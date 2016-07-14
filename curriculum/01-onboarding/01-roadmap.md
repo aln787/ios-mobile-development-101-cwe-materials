@@ -8,9 +8,10 @@ The following information is provided to help contextualize this workshop by des
 
 In order to make sure that students are best prepared for this workshop, we suggest recommending the following prerequisites. Students should have some basic foundations in the following areas:
 
-* X
-* Y
-* Z
+* Bring a Mac laptop and optional iOS testing device.
+* Download and install the latest version of Xcode.
+* A thirst for knowledge!
+
 
 
 ## Follow-up Recommendations
