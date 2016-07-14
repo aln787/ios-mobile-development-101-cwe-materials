@@ -4,7 +4,7 @@ Our instructor community has grown tremendously, and local markets do so much to
 
 Included in this file is information about:
 
-- [__________ GitHub Community](#the-community)
+- [ios-mobile-development-101-cwe-materials GitHub Community](#the-community)
 - [Contributing Guidelines for Issues or Pull Requests](#contributing-guidelines-issues-and-pull-requests)
 - [Using Labels Appropriately](#labels)
 - [Contributor Expectations](#contributors-expectations)
