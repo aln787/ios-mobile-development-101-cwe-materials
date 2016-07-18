@@ -92,7 +92,7 @@ Before we dive in, a bit about you!
 
 iOS is the operating system that powers the iPhone and iPad. It's based on a set of frameworks and programming languages that power all of Apple's devices, including Macs and Macbooks (macOS, or until recently, Mac OS X), the Apple TV (tvOS), and the Apple Watch (watchOS). Learning iOS is a great starting point for gaining access to the rest of Apple's device ecosystem, and as Apple continues to standardize the frameworks that power these devices, the easier it is to build for all of them simultaneously by sharing code.
 
-iOS stems from a long history of Apple development. Most notable is Objective-C, a 30-year old programming language, which still exists as a viable, low-level language for building apps. However, Swift is the new language of choice for Apple development, being more modern, approachable, and automated than Objective-C. It's a great way to build apps as well as learn programming if you're new to code.
+iOS stems from a long history of Apple development. Most notable is Objective-C, a 30-year old programming language, which still exists as a viable, low-level language for building apps. However, _Swift_ is the new language of choice for Apple development, being more modern, approachable, and automated than Objective-C. It's a great way to build apps as well as learn programming if you're new to code.
 
 
 ***
@@ -106,11 +106,11 @@ Xcode is an integrated development environment (or IDE) made available to every 
 
 It is a combination of tools that work together (hence, "integrated") in a single place (hence, "environment") for developing apps and programs. By using Xcode, you can learn Swift, develop projects that work on any Apple device, and simulate those apps without having to own a mobile device, Apple watch, or Apple TV.
 
-Those tools integrated into Xcode consist of a code editor, "playgrounds," Interface Builder, an iOS device simulator (or just, "simulator"), a debugging suite, and other various tools that help with editing various files that comprise an app (property lists, data schemas, etc.).
+Those tools integrated into Xcode consist of a code editor, "Playgrounds," Interface Builder, an iOS device simulator (or just, "simulator"), a debugging suite, and other various tools that help with editing various files that comprise an app (property lists, data schemas, etc.).
 
 Xcode can be downloaded from the Mac App Store, along with other third-party tools used for testing and building various components that go into apps (like icons). Other popular tools exist online that enable us to use open source code to simplify our iOS development.
 
-### Parts of an App
+### The Ecosystem
 
 Before we start diving into building iOS apps, there are some concepts we have to introduce.
 
@@ -120,11 +120,56 @@ The "operating system" is the software that provides the environment in which ou
 
 Once you start working with code, you'll take advantage of third-party frameworks (also called "libraries" or "packages") written by other iOS developers that will make your life easier. For example, one library called `SDWebImage` is used to load images from the Internet asynchronously (so the UI doesn't stall), and cache them on the device (so you only have to download them once).
 
+### Parts of an App
+
+Xcode enables you to develop almost any aspect of an app in one place. Here are the things that we're going to need to know to be effective with building apps:
+
+**User Interfaces.** Interface Builder enables you to build UIs for apps in a kind of visual flowchart. In fact, Xcode's Interface Builder is so robust, that you can prototype entire apps and run them on your iPhone without needing to write a single line of code! You can drag-and-drop interface components onto screens that will adapt to the user's device size and its orientation. Also, Xcode has features that present code and UI side-by-side, so you can work with them together conveniently.
+
+**Code.** Xcode naturally gives you the ability to write code, but its integrated nature means it "understands" the code much more than a basic text editor would. This means you can reference Apple's documentation, jump to places where functions or classes are defined, and even get suggestions on what to write next, all from Xcode itself. When you're writing code, you might want to try something out before committing it to the app itself, so Xcode provides _Playgrounds,_ interactive environments that evaluate Swift code in real time.
+
+**Tests.** Learning to write tests (code that ensures your code runs correctly) is a major step in becoming a professional app developer. Xcode provides facilities to help you automatically build your app. Tests enable you to make changes with confidence. _And don't let anyone convince you that "moving faster" is more important!_ Writing tests empowers you to move faster, because you won't have to fix all the bugs that will result from changing untested code!
+
+**Assets.** These are all the media files that you need to make an app look professional and consumable by customers. This includes icons, videos, graphics, etc. Xcode puts them into a Media Library so you can access them from any part of the app.
+
+In this course, we'll introduce you to building a simple app with Interface Builder and running it in the simulator (or on your device, if you so choose). This will enable you to deploy app prototypes on your phone and demonstrate them to others. We'll also give you some resources to continue your learning and dive into powering that app with actual Swift code.
 
 ***
 
 <a name="guided-practice1"></a>
 ## Guided Practice: Navigating your Xcode environment (15 mins)
+
+### Create an Xcode Project
+
+An Xcode "project" contains everything needed to make one or more related apps. If you're building for iPhone, iPad, Apple TV, and a Mac, you can share code between those apps and deploy them to Apple's App Stores all from Xcode.
+
+
+### What's in an Xcode project?
+
+There are four file types that come with an Xcode project.
+
+
+### Introduction to Interface Builder
+
+#### What are Storyboards?
+
+Storyboards are a mechanism that enables you to compose multiple Scenes, the transitions between them, and their respective Views in a single place.
+
+Sitemaps that web designers draw show the structure of the site and describe the "flow" from one page to another. Storyboards are like this. It shows various screens of the app (called "Scenes"), and how one flows to into the next. Each line of flow (transition) from one Scene to the another is called a "Segue."
+
+#### View Controllers + Scenes
+
+View Controllers manage Views and generally represent one "Scene" of an app. We can attach a bunch of code to a View Controller. That’s where the "logic" for an app generally lives.
+
+#### First, disable Auto Layout.
+
+Auto Layout is the modern way of building responsive interfaces for iOS. That means that you can declare rules for how the app should adapt a user interface for multiple devices, like an iPhone SE, iPhone 6S, iPad, etc., without having to build a separate Storyboard for each device.
+
+Auto Layout is quite complicated. It gives you a lot of power as an app developer, but it hours of practice to gain the basics (and even longer to master). We're going to avoid it for now by using the "old school" method of automated layout called "Springs-and-Struts."
+
+
+### What are views?
+
 
 - Launch Xcode.
 - How to create a project.
@@ -162,7 +207,7 @@ Tap on the button. Does it animate?
 ## Introduction: App Fundamentals (15 mins)
 
 - Storyboards for complex user interfaces.
-- Playgrounds for Swift experiments.
+- Playgrounds for Swift experiments. Quick intro.
 - We can prototype apps using Interface Builder alone.
 - We can also prototype code in Playgrounds.
 - Ultimately, you'll learn how to power the UI with code. But not in this workshop.
@@ -172,14 +217,60 @@ Tap on the button. Does it animate?
 <a name="demo2"></a>
 ## Demo: App Fundamentals: Storyboards (15 mins)
 
-- Add a navigation controller.
-- Add a segue from the button tap to a UITableViewController.
-- Run the app and demonstrate the segue.
+### Navigation Controllers
+
+Navigation Controllers manage View Controllers. A Navigation Controller decides which View Controller to display at any given moment, and it also keeps track of the ones that it has displayed previously and in which order. Think of it like how a web browser keeps track of history.
+
+There are a couple of terms we need to introduce to understand what's going on in the Storyboard when we introduce a Navigation Controller:
+
+* Initial View Controller - The first View Controller an app will display when launching.
+* Root View Controller - The first View Controller that a Navigation Controller will show.
+
+There are a couple of ways to add a Navigation Controller, but we'll use one that makes it easy to get started:
+
+1. Select the View Controller in Interface Builder.
+2. Go to the menu item `Editor > Embed In > Navigation Controller`.
+3. Notice how the IB canvas shows another box labeled "Navigation Controller," which points to your original View Controller.
+
+### Segues
+
+Segues are animated transitions between two View Controllers. The Source View Controller renders the scene a user sees before the Segue, and the Destination View Controller is the one the UI will render afterwards. There are several types that determine how a View Controller is "presented" to the user.
+
+For example, when a user taps on the "Sign In" button, we would want first to check the user's password (which we won't do this time), then if the password is correct, have the current scene "segue" to the home scene of the app.
+
+### Creating a Segue
+
+The Navigation Controller gives your app the ability to use Segues. Here's how to add that next Scene to your app and Segue to it:
+
+1. Drag a UITableViewController to the canvas, just to the right of the login scene.
+2. Press CTRL and click-and-drag from the "Sign In" button to the UITableViewController.
+3. You should see a blue line and when you hover over the table, it should highlight.
+4. Let go of the mouse button. A small dark menu should appear. This is asking you what kind of Segue you want to create.
+5. Click on "Push."
+6. Run your app!
+
+Now, when the app loads, you should see a Navigation Bar at the top, and when you click on the "Sign In" button, it should segue to the table, which slides in from the right.
+
+Note how the table view controller shows a "Back" button at the top. This is one of the conveniences that the Navigation Controller offers. Let's explore a bit how this works:
+
+1. Go back to Interface Builder.
+2. Click on the original Scene you made, which we'll call the "Login View Controller."
+3. Double-click in the middle of the Navigation Bar at the top.
+4. When the editor appears, type "Login".
+5. Run your app.
+
+Now when you tap "Sign In," the back button now says "Login," reflecting the title of the previous (i.e. Source) View Controller. The Navigation Controller "knows" which View Controllers it has shown to the user. Later, you'll be able to use this fact (leveraging Swift, of course) to pass data between the View Controllers, like the user's email address.
 
 ***
 
 <a name="guided-practice2"></a>
 ## Guided Practice: App Fundamentals: Media and Tables (20 mins)
+
+We're going to investigate one of the most common design patterns in iOS, the master/detail view. A master view is a list of a set of items, like the view of tweets in the Twitter app. The detail view is a whole-screen view that shows _details_ about a selected item from the master list.
+
+To do this, we're going to create a catalog of objects, introduce the process of importing media that you'll find in Google Image Search (or another source), then include the images in the project's media library.
+
+
 
 - Add media to the media library.
 - Drop in an image on the front page.
@@ -214,10 +305,16 @@ Tap on the button. Does it animate?
 
 #### What Should You Do Next?
 
-- Learn about Swift.
-- Learn about IBOutlets and IBActions to "link" UI with code.
 - Check out the learning resources at https://developer.apple.com.
-- There's a new Swift iBook with interactive lessons!
+- Download Apple's new Swift iBook.
+- Watch videos from WWDC.
+- Read more about Apple technologies.
+- Practice using Xcode to build app prototypes.
+- Download sample icons from thenounproject.com
+- Download Prepo from the App Store to size media and import it into your app.
+- Start linking user interface to code via IBOutlets and IBActions.
+- Learn more about mobile design and what makes it unique and powerful.
+
 
 #### Q & A
 
