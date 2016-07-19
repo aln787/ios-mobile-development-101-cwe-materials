@@ -143,10 +143,24 @@ In this course, we'll introduce you to building a simple app with Interface Buil
 
 An Xcode "project" contains everything needed to make one or more related apps. If you're building for iPhone, iPad, Apple TV, and a Mac, you can share code between those apps and deploy them to Apple's App Stores all from Xcode.
 
+The typical steps to create new project:
+
+1. Open Xcode and go to File > New > Project.
+2. You'll be asked to pick a template. We're going to start with `iOS > Application > Single View Application`. This will be the most common template you'll use. The others may provide some early convenience, but most developers don't bother.
+3. Give the project a name.
+4. Specify an "Organization Name." If you don't have a company you're building this app for, think of it as a company or brand you would make for your apps.
+5. There are several checkboxes below for Core Data and test suites. Leave them unchecked for now.
+6. Finally, specify a place to save the folder into which all the project files will go. You can also leave "Create a Git Repository" unchecked.
+
 
 ### What's in an Xcode project?
 
 There are four file types that come with an Xcode project.
+
+- `.swift` files, which contain app logic written in Swift.
+- `.storyboard` files, which will hold user interfaces.
+- `.plist` files, which are used for configuration.
+- `.xib` files, which hold individual, custom UI views.
 
 
 ### Introduction to Interface Builder
@@ -165,21 +179,29 @@ View Controllers manage Views and generally represent one "Scene" of an app. We 
 
 Auto Layout is the modern way of building responsive interfaces for iOS. That means that you can declare rules for how the app should adapt a user interface for multiple devices, like an iPhone SE, iPhone 6S, iPad, etc., without having to build a separate Storyboard for each device.
 
-Auto Layout is quite complicated. It gives you a lot of power as an app developer, but it hours of practice to gain the basics (and even longer to master). We're going to avoid it for now by using the "old school" method of automated layout called "Springs-and-Struts."
+Auto Layout is quite complicated and delicate. It gives you a lot of power as an app developer, but it hours of practice to gain the basics (and even longer to master). We're going to avoid it for now by using the "old school" method of automated layout called "Springs-and-Struts."
 
 
 ### What are views?
 
+To start learning how to build iOS apps, we’ll first tackle "views." Nearly every UI element we see in an app is a View. Buttons, labels, tables, images, etc.
 
-- Launch Xcode.
-- How to create a project.
-- What's in an iOS project? (file types)
-- What are views?
-- Disable auto layout.
-- Add a text field to a view controller in Interface Builder.
-- Run your app in a simulator.
-- Tap on the text field, enter text. Observe how UIKit automates the keyboard appearance and animations.
-- Change properties of the text field in Interface Builder.
+A View is a renderable element that has a size and rules about how to draw and interact with it. A Button, for example, is tappable and can be rendered as text or an image.
+
+You'll build UIs by composing Views onto a Scene represented by a View Controller. In the Interface Builder Library, you'll find a number of prebuilt Views that come with the UIKit framework.
+
+Let's start by adding a simple text field to the View Controller shown in the Main.storyboard file. In the Library, search for "text field" using the search bar at the bottom. Drag it from the Library onto the middle of the View Controller. You can reposition it by click-and-dragging it around, then resize it by dragging the two handles at either end.
+
+When you click the text field, the sidebar on the right, the Inspector, will show attributes of the selected View. First, click on the Attributes Inspector, 4th from the left. Change the value in the Attribute called "Placeholder" to "Email," which is the placeholder text for the text field. This will show when the text field is empty, cueing the user to what to put there.
+
+Now let's run your app in the simulator! Click the play button in the upper left of the Xcode window. The first time, it will take a while, since the Simulator has to start, and Xcode has to install iOS onto the simulator. What you're doing is starting up a virtual device, a virtual iPhone on your Mac that will act just like your own. You can't install apps on in from the App Store, but you can install your own apps just by pressing the Play button.
+
+When the simulator starts, try the following:
+
+- Click (tap) on the text field. A keyboard should appear.
+- Type on the keyboard by tapping its buttons.
+
+This is how we'll build user interfaces. We'll add more Views, customize them, test them in the Simulator, and repeat. This way, you'll be able to see your entire app (or most of it), without having to write any code. Then at the end of the lesson, we'll make multiple Scenes and connect them together.
 
 ***
 
@@ -245,7 +267,7 @@ The Navigation Controller gives your app the ability to use Segues. Here's how t
 1. Drag a UITableViewController to the canvas, just to the right of the login scene.
 2. Press CTRL and click-and-drag from the "Sign In" button to the UITableViewController.
 3. You should see a blue line and when you hover over the table, it should highlight.
-4. Let go of the mouse button. A small dark menu should appear. This is asking you what kind of Segue you want to create.
+4. Let go of the mouse button. A small dark menu should appear. This is asking you what kind of Segue it should create for you.
 5. Click on "Push."
 6. Run your app!
 
@@ -268,12 +290,18 @@ Now when you tap "Sign In," the back button now says "Login," reflecting the tit
 
 We're going to investigate one of the most common design patterns in iOS, the master/detail view. A master view is a list of a set of items, like the view of tweets in the Twitter app. The detail view is a whole-screen view that shows _details_ about a selected item from the master list.
 
-To do this, we're going to create a catalog of objects, introduce the process of importing media that you'll find in Google Image Search (or another source), then include the images in the project's media library.
+To do this, we're going to create a catalog of objects (like a list of dogs), introduce the process of importing media that you'll find in Google Image Search (or another source), then include the images in the project's media library.
 
+After downloading some images, put them in a folder. You can import them into your project simply by dragging the folder from Finder onto the sidebar in Xcode. You'll see a dialog box pop up with some options about how to enter them. For now, let's check "Copy Items if Needed" and select "Create Groups." We'll describe what these mean later.
 
+Once the import is complete, the images will show up in the Media Library in the lower-right corner of Interface Builder. We're going to add these images to the rows in the table view, but first we have to learn a little about tables.
 
-- Add media to the media library.
-- Drop in an image on the front page.
+### Table Views
+
+Table Views (or UITableViews) are one of the most important views in iOS. You see tables everywhere. Pretty much every task manager app uses a table view to show a list of tasks. The Twitter app, Instagram, Facebook, all use table views to display a linear list of entries. In addition to their ubiquity, they also use code patterns that relate to many other parts of UIKit, but we won't be learning about that in this workshop.
+
+Tables are composed of Table "cells," each of which contains a generic View. There are two ways you can specify the content of a cell, either statically or dynamically. Both methods use Interface Builder, but static cells are all we have time for today.
+
 - Drop media into the first cell in the table.
 - Add a segue from the cell to a new view controller.
 
@@ -283,11 +311,12 @@ To do this, we're going to create a catalog of objects, introduce the process of
 ## Independent Practice: Apply App Fundamentals (20 mins)
 
 - Add more images and labels to more cells in the table.
-- Add more view controllers. Segue to them.
+- Add more view controllers. Segue to them by tapping on the table cells.
 - Add more views to the target view controllers (images, text views, labels).
-- Run the app and test it.
-- Have others test it.
 - Tweak and modify properties of the text and other views.
+- Run the app and test it.
+- Have others test it on your phone.
+
 
 ***
 
@@ -298,6 +327,10 @@ To do this, we're going to create a catalog of objects, introduce the process of
 
 > Review Topics Covered
 
+- What goes into an iOS app?
+- What is a Storyboard?
+- What is a View? Name some examples.
+
 ***
 
 <a name="takeaway"></a>
@@ -305,7 +338,7 @@ To do this, we're going to create a catalog of objects, introduce the process of
 
 #### What Should You Do Next?
 
-- Check out the learning resources at https://developer.apple.com.
+- Check out the learning resources at <https://developer.apple.com>.
 - Download Apple's new Swift iBook.
 - Watch videos from WWDC.
 - Read more about Apple technologies.
