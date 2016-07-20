@@ -229,7 +229,6 @@ Run the app in the iOS simulator. Verify that the top text field, when tapped, s
 
 Tap on the button. Does it animate?
 
-
 ***
 
 > **BREAK**
@@ -239,11 +238,13 @@ Tap on the button. Does it animate?
 <a name="intro2"></a>
 ## Introduction: App Fundamentals (15 mins)
 
-- Storyboards for complex user interfaces.
-- Playgrounds for Swift experiments. Quick intro.
-- We can prototype apps using Interface Builder alone.
-- We can also prototype code in Playgrounds.
-- Ultimately, you'll learn how to power the UI with code. But not in this workshop.
+Putting an app together requires a variety of tools and processes. We have to design and build user interfaces, write code to power those user interfaces, write business logic (in Swift) to manipulate user data, connect to outside services like Google Maps or Yelp, and find ways to store users' data either on the device or on the cloud.
+
+When we write code, Xcode provides facilities for us to test and prototype components of code that we write. They're called "Playgrounds," and they're one of the advantages of using Swift. They enable us to write code using Apple's frameworks, work with it interactively, then incorporate that code into our apps. It vastly cuts down on the time to learn and write Swift by giving us dynamic and interactive feedback.
+
+> You can take this opportunity to demonstrate a Playground. The students can follow along if you deem it useful. Writing simple arithmetic expressions that aren't too Swift-specific might be the best route. Point out that the answers on the right are displayed right next to the expressions that produce them.
+
+To build user interfaces, we typically use Storyboards that contain more than one View Controller. Once you learn the basics, you'll be able to prototype entire apps and present them on your phone.
 
 ***
 
@@ -374,9 +375,9 @@ We're going to add a "detail" view to the cell you've just populated. In a maste
 Here's how to add a detail scene:
 
 - From the Library, drag a new View Controller onto the canvas, just to the right of your Table View Controller. Position it into a convenient spot to the right.
-- CTRL-click on the table cell. A black menu should appear.
+- CTRL-click on the "Table View Cell" in the Document Outline. A black menu should appear.
 - Next to the item called "selection" is a small circle. Click-and-drag from that circle onto the new View Controller.
-- The same Segue selection menu should appear. Select "Push."
+- The same Segue selection menu should appear. Select "Push." Note how a navigation bar now appears at the top of the new View Controller.
 - Add another Image View to the View Controller and select the same image as is in the cell. Remember to set your springs-and-struts and image mode!
 - Run your app. When you tap on the cell, the app should segue to the new detail scene.
 
@@ -402,8 +403,10 @@ Here's how to add a detail scene:
 ## Conclusion: Review + Recap Topics (10 mins)
 
 > Review Deliverables
+>
+> Encourage some students to share their apps with the class.
 
-> Review Topics Covered
+> Review topics to cover in a discussion format.
 
 ### Apps
 
@@ -412,11 +415,11 @@ Here's how to add a detail scene:
 
 ### Tools
 
-- What tools does Xcode provide and what do they do?
+- What tools does Xcode provide and what do they enable you to do?
 
 ### User interfaces
 
-- What is a Storyboard? How can you create one?
+- What is a Storyboard?
 - What is a View? Name some examples of views provided by UIKit.
 
 
