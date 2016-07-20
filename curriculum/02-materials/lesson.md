@@ -181,12 +181,23 @@ Auto Layout is the modern way of building responsive interfaces for iOS. That me
 
 Auto Layout is quite complicated and delicate. It gives you a lot of power as an app developer, but it hours of practice to gain the basics (and even longer to master). We're going to avoid it for now by using the "old school" method of automated layout called "Springs-and-Struts."
 
+To disable Auto Layout:
+
+- Click on the View Controller.
+- In the Inspector panel on the right, click on the first icon, the File Inspector.
+- Near the middle of the panel, uncheck "Use Auto Layout."
+- Xcode will ask you if you want to disable "Size classes." Confirm this.
+
+"Size classes" are a mechanism in Auto Layout that help you distinguish between classes of devices, like tall narrow screens, like for iPhone SE and 6S, or large, wider screens, like the iPad in landscape mode. When using Auto Layout, this enables you to manipulate the view layouts according to which class of device you're designing for. Here, however, we won't be using Auto Layout, so we don't need size classes.
+
 
 ### What are views?
 
 To start learning how to build iOS apps, we’ll first tackle "views." Nearly every UI element we see in an app is a View. Buttons, labels, tables, images, etc.
 
-A View is a renderable element that has a size and rules about how to draw and interact with it. A Button, for example, is tappable and can be rendered as text or an image.
+A _View_ is a renderable element that has a size, has rules about how to draw and interact with it, and can contain other Views. A Button, for example, is tappable and can be rendered as text or an image. A Collection View, like the one in the Photos app, contains many square Image Views. Every View Controller by default has a single, empty View into which you add your own Views.
+
+> A possible exercise here is to have students pair up, open an app that they know (like Instagram or Facebook) and start breaking down the UI by the Views they see. Show the View catalog slide or have them page through the Interface Builder Library.
 
 You'll build UIs by composing Views onto a Scene represented by a View Controller. In the Interface Builder Library, you'll find a number of prebuilt Views that come with the UIKit framework.
 
@@ -198,7 +209,7 @@ Now let's run your app in the simulator! Click the play button in the upper left
 
 When the simulator starts, try the following:
 
-- Click (tap) on the text field. A keyboard should appear.
+- Click (tap) on the text field. A keyboard should appear, just like on an iPhone.
 - Type on the keyboard by tapping its buttons.
 
 This is how we'll build user interfaces. We'll add more Views, customize them, test them in the Simulator, and repeat. This way, you'll be able to see your entire app (or most of it), without having to write any code. Then at the end of the lesson, we'll make multiple Scenes and connect them together.
@@ -292,31 +303,98 @@ We're going to investigate one of the most common design patterns in iOS, the ma
 
 To do this, we're going to create a catalog of objects (like a list of dogs), introduce the process of importing media that you'll find in Google Image Search (or another source), then include the images in the project's media library.
 
+> Have the students search for some catalog-able item, like dogs, cats, etc. The goal is to download 3 or 4 related images.
+
 After downloading some images, put them in a folder. You can import them into your project simply by dragging the folder from Finder onto the sidebar in Xcode. You'll see a dialog box pop up with some options about how to enter them. For now, let's check "Copy Items if Needed" and select "Create Groups." We'll describe what these mean later.
 
 Once the import is complete, the images will show up in the Media Library in the lower-right corner of Interface Builder. We're going to add these images to the rows in the table view, but first we have to learn a little about tables.
 
 ### Table Views
 
-Table Views (or UITableViews) are one of the most important views in iOS. You see tables everywhere. Pretty much every task manager app uses a table view to show a list of tasks. The Twitter app, Instagram, Facebook, all use table views to display a linear list of entries. In addition to their ubiquity, they also use code patterns that relate to many other parts of UIKit, but we won't be learning about that in this workshop.
+Table Views (or UITableViews) are one of the most important views in iOS. You see tables everywhere. Pretty much every task manager app uses a table view to show a list of tasks. The Twitter app, Instagram, Facebook, all use table views to display a linear list of entries. In addition to their ubiquity, they also use code patterns that relate to many other parts of UIKit.
 
-Tables are composed of Table "cells," each of which contains a generic View. There are two ways you can specify the content of a cell, either statically or dynamically. Both methods use Interface Builder, but static cells are all we have time for today.
+Tables are composed of Table "Cells," each of which contains a generic, empty View by default. There are two ways you can specify the content of a cell, either "statically" or "dynamically."
 
-- Drop media into the first cell in the table.
-- Add a segue from the cell to a new view controller.
+"Static Cells" contain content that doesn't change, and that you can specify here in Interface Builder. "Dynamic Prototypes" are cells that define a template, which you can build here in IB, but must use code to populate with content.
+
+Dynamic Prototypes are used most of the time. Apps like Twitter use them to show different layouts for different tweets. So why use static cells? There are some tables that don't change, like a settings panel. We're going to use static cells to show a catalog of things.
+
+First, let's tell the table view that we want it to contain static cells. On the left of the Xcode window, find the Document Outline, which is a second sidebar only available in Interface Builder. This sidebar contains a list of all the View Controllers and Views in the Storyboard, arranged by hierarchy.
+
+![](images/document-outline.png)
+
+Expand the items under Table View Controller in the Document Outline by clicking on the small triangles. This is similar to the tree view in Finder. Keep expanding until you see the views "Table View" > "Table View Section" > "Table View Cell". This shows the View structure of that View Controller. You can select Views either from the canvas on the right, or, to be more accurate when Views are nested within each other, you can select them in the Document Outline.
+
+Here's how to specify that the table should use static cells:
+
+- Click on "Table View" in the Document Outline to select it
+- Go to the Attributes Inspector as before.
+- Under Content at the top, select "Static Cells" from the dropdown.
+- You'll get the chance to select how many static cells you want to show. It defaults to 3.
+
+### Adding Images
+
+Now we're going to add the media you just imported to the cells to make a kind of "catalog."
+
+- Select the first "Table View Cell" in the Document Outline.
+- In the canvas, the cell should be selected, and you should a see a small handle at the bottom. Drag this to resize the cell if you want.
+- Find an "Image View" in the IB Library.
+- Drag an image view onto the cell in the canvas. Alternatively, you can drag it underneath the "Table View Cell" in the document outline.
+- Resize the image view to your liking.
+- With the image view selected, look at the Attributes Inspector on the right. At the top, select an image from the drop-down labeled Image. If you want to see the actual images, you can open the Media Library at the bottom of the sidebar.
+- You'll see the image is probably stretched oddly. Under Mode, select either "Aspect Fit" or "Aspect Fill."
+- Pick the image mode that looks best to you. Resize the cell and the image view to produce the layout you want.
+
+Congratulations! You've just started building the master view of a master/detail design pattern!
+
+Run your app. Now when you tap on "Sign In", the app should segue to the table and show your image.
+
+### Springs-and-Struts
+
+> This section may be optional if time is short. It's intended to demonstrate how to get a more accurate layout between Interface Builder and what's displayed in the app.
+
+If you noticed, the Views you laid out in IB don't quite match what you see in the app itself when running in the simulator. There may be extra space around image or text views, or they might not be in their right places.
+
+This is because IB is built to design _responsive_ layouts, that is, layouts that respond to different devices with different proportions. It's not possible to represent every possible device proportion simultaneously, so IB gives us something more generic and provides ways to express the rules around how to lay out these views.
+
+The set of layout rules we're using is called "Springs-and-Struts." If you click on the Size Inspector while one of the text fields is selected in the Login View Controller, you'll see a section labeled "Autoresizing" with a black square, four clickable lines outside the square, and two double-arrows on the inside.
+
+![](images/size-inspector.png)
+
+The lines on the outside are called "struts," and the inner arrows are "springs." If a spring is selected (red), it means that that dimension (either height or width) of the selected view is proportional to that dimension of the view that contains it.
+
+If a "strut" is selected, it means that the margin is fixed, that is, _not_ proportional to the margin to the view that contains it.
+
+For our purposes, we'll want to deselect all struts and select both of the springs. Give it a try and run your app. The views should be in a better place.
+
+### More Segues!
+
+We're going to add a "detail" view to the cell you've just populated. In a master/detail pattern, you have a list of items, and then detail views that contain, well, the _details_ about a single item. Just like in the Twitter app, tapping on a tweet shows a Scene that contains information about that single tweet.
+
+Here's how to add a detail scene:
+
+- From the Library, drag a new View Controller onto the canvas, just to the right of your Table View Controller. Position it into a convenient spot to the right.
+- CTRL-click on the table cell. A black menu should appear.
+- Next to the item called "selection" is a small circle. Click-and-drag from that circle onto the new View Controller.
+- The same Segue selection menu should appear. Select "Push."
+- Add another Image View to the View Controller and select the same image as is in the cell. Remember to set your springs-and-struts and image mode!
+- Run your app. When you tap on the cell, the app should segue to the new detail scene.
+
 
 ***
 
 <a name="ind-practice2"></a>
 ## Independent Practice: Apply App Fundamentals (20 mins)
 
-- Add more images and labels to more cells in the table.
-- Add more view controllers. Segue to them by tapping on the table cells.
-- Add more views to the target view controllers (images, text views, labels).
-- Tweak and modify properties of the text and other views.
-- Run the app and test it.
-- Have others test it on your phone.
+> This part of the exercise continues adding media to the table and adding View Controllers. This can also be an opportunity for students to explore other Views in the Library.
 
+- Complete your catalog of images by adding an image to each cell in the table.
+- If you want, add more cells to the table by clicking on "Table View Section" in the Document Outline and changing the number of rows.
+- Add View Controllers for each table cell. Remember to add segues.
+- If you're feeling ambitious, add a Label or Text View to the View Controller to describe the image. Remember to set your springs and struts!
+- Run the app and test it.
+
+> This section is intended to allow the students to get accustomed to working with Interface Builder. Walk around the classroom and answer any questions about views, etc.
 
 ***
 
@@ -327,9 +405,20 @@ Tables are composed of Table "cells," each of which contains a generic View. The
 
 > Review Topics Covered
 
-- What goes into an iOS app?
-- What is a Storyboard?
-- What is a View? Name some examples.
+### Apps
+
+- What components comprise an iOS app?
+- What different file types are found in an iOS app?
+
+### Tools
+
+- What tools does Xcode provide and what do they do?
+
+### User interfaces
+
+- What is a Storyboard? How can you create one?
+- What is a View? Name some examples of views provided by UIKit.
+
 
 ***
 
@@ -338,15 +427,16 @@ Tables are composed of Table "cells," each of which contains a generic View. The
 
 #### What Should You Do Next?
 
-- Check out the learning resources at <https://developer.apple.com>.
-- Download Apple's new Swift iBook.
-- Watch videos from WWDC.
-- Read more about Apple technologies.
+- Check out the learning resources at [Apple's Developer Site][https://developer.apple.com].
+- Download Apple's [Swift iBook](https://itunes.apple.com/us/book/swift-programming-language/id1002622538?mt=11).
+- Watch videos from [WWDC](https://developer.apple.com/wwdc/).
+- Read more about [new Apple technologies](https://developer.apple.com/develop/).
 - Practice using Xcode to build app prototypes.
-- Download sample icons from thenounproject.com
+- Download sample graphics from [The Noun Project](http://thenounproject.com) to serve as icons for your sample apps.
 - Download Prepo from the App Store to size media and import it into your app.
-- Start linking user interface to code via IBOutlets and IBActions.
-- Learn more about mobile design and what makes it unique and powerful.
+- Learn to link UI views to code via IBOutlets and IBActions.
+- Learn more about [Apple mobile design](https://developer.apple.com/ios/human-interface-guidelines/).
+- Read about [running your app on your device](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/LaunchingYourApponDevices/LaunchingYourApponDevices.html).
 
 
 #### Q & A
