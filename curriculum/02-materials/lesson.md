@@ -92,8 +92,45 @@ Before we dive in, a bit about you!
 
 iOS is the operating system that powers the iPhone and iPad. It's based on a set of frameworks and programming languages that power all of Apple's devices, including Macs and Macbooks (macOS, or until recently, Mac OS X), the Apple TV (tvOS), and the Apple Watch (watchOS). Learning iOS is a great starting point for gaining access to the rest of Apple's device ecosystem, and as Apple continues to standardize the frameworks that power these devices, the easier it is to build for all of them simultaneously by sharing code.
 
-iOS stems from a long history of Apple development. Most notable is Objective-C, a 30-year old programming language, which still exists as a viable, low-level language for building apps. However, _Swift_ is the new language of choice for Apple development, being more modern, approachable, and automated than Objective-C. It's a great way to build apps as well as learn programming if you're new to code.
+iOS stems from a long history of Apple development for Mac. The most notable technology is Objective-C, a 30-year old programming language that still exists as a viable language for building apps for iOS and Mac. However, _Swift_ is the new language of choice for Apple development, being more approachable than Objective-C. It's a great way to build apps as well as learn programming if you're new to code. Here's a brief comparison:
 
+Objective-C:
+
+```
+@interface User : NSObject {
+    NSString* firstName;
+    NSString* lastName;
+}
+@property (retain) NSString* firstName;
+@property (retain) NSString* lastName;
+@end
+
+
+@implementation User
+
+@synthesize firstName;
+@synthesize lastName;
+
+- (void) dealloc
+{
+    [firstName release];
+    [lastName release];
+    [super dealloc];
+}
+
+@end
+```
+
+The same code written in Swift:
+
+```
+class User {
+    var firstName : String
+    var lastName : String
+}
+```
+
+Much shorter and more readable!
 
 ***
 
@@ -108,7 +145,7 @@ It is a combination of tools that work together (hence, "integrated") in a singl
 
 Those tools integrated into Xcode consist of a code editor, "Playgrounds," Interface Builder, an iOS device simulator (or just, "simulator"), a debugging suite, and other various tools that help with editing various files that comprise an app (property lists, data schemas, etc.).
 
-Xcode can be downloaded from the Mac App Store, along with other third-party tools used for testing and building various components that go into apps (like icons). Other popular tools exist online that enable us to use open source code to simplify our iOS development.
+Along with Xcode, developers often use other third-party tools for testing and building various components that go into apps (like icons). Other popular tools exist that enable us to easily incorporate other developers' code to simplify our iOS development.
 
 ### The Ecosystem
 
