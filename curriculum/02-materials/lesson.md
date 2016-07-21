@@ -143,6 +143,8 @@ Xcode is an integrated development environment (or IDE) made available to every 
 
 It is a combination of tools that work together (hence, "integrated") in a single place (hence, "environment") for developing apps and programs. By using Xcode, you can learn Swift, develop projects that work on any Apple device, and simulate those apps without having to own a mobile device, Apple watch, or Apple TV.
 
+> Slide showing a Swift Playground.
+
 Those tools integrated into Xcode consist of a code editor, "Playgrounds," Interface Builder, an iOS device simulator (or just, "simulator"), a debugging suite, and other various tools that help with editing various files that comprise an app (property lists, data schemas, etc.).
 
 Along with Xcode, developers often use other third-party tools for testing and building various components that go into apps (like icons). Other popular tools exist that enable us to easily incorporate other developers' code to simplify our iOS development.
@@ -151,7 +153,7 @@ Along with Xcode, developers often use other third-party tools for testing and b
 
 Before we start diving into building iOS apps, there are some concepts we have to introduce.
 
-The "operating system" is the software that provides the environment in which our apps live. This is iOS, which is analogous to Windows, Linux, or Android, but runs exclusively on Apple's mobile devices.
+The "operating system" is the software that provides the environment in which our apps live. This is iOS, which is analogous to Windows, Linux, or Android, but runs exclusively on Apple's mobile devices. It "talks" to the hardware, so we don't have to worry about the peculiarities of running on a particular device.
 
 "Frameworks" are code that Apple provides that standardize the interaction between our apps and the operating system and device. For example, the "UIKit" framework provides user interface elements like buttons, toolbars, and tables that comprise user interfaces. It means we don't have to worry about writing code that draws typical elements, and it provides a consistent look-and-feel between apps.
 
@@ -208,10 +210,6 @@ Storyboards are a mechanism that enables you to compose multiple Scenes, the tra
 
 Sitemaps that web designers draw show the structure of the site and describe the "flow" from one page to another. Storyboards are like this. It shows various screens of the app (called "Scenes"), and how one flows to into the next. Each line of flow (transition) from one Scene to the another is called a "Segue."
 
-#### View Controllers + Scenes
-
-View Controllers manage Views and generally represent one "Scene" of an app. We can attach a bunch of code to a View Controller. That’s where the "logic" for an app generally lives.
-
 #### First, disable Auto Layout.
 
 Auto Layout is the modern way of building responsive interfaces for iOS. That means that you can declare rules for how the app should adapt a user interface for multiple devices, like an iPhone SE, iPhone 6S, iPad, etc., without having to build a separate Storyboard for each device.
@@ -227,6 +225,9 @@ To disable Auto Layout:
 
 "Size classes" are a mechanism in Auto Layout that help you distinguish between classes of devices, like tall narrow screens, like for iPhone SE and 6S, or large, wider screens, like the iPad in landscape mode. When using Auto Layout, this enables you to manipulate the view layouts according to which class of device you're designing for. Here, however, we won't be using Auto Layout, so we don't need size classes.
 
+#### View Controllers + Scenes
+
+View Controllers manage Views and generally represent one "Scene" of an app. We can attach a bunch of code to a View Controller. That’s where the "logic" for an app generally lives.
 
 ### What are views?
 
