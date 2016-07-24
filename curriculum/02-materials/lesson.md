@@ -24,7 +24,7 @@ creator:
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Review & modify lesson plan & slide deck as needed
+- Review & modify [lesson plan](lesson-plan.md) & [slide deck](Slides.pdf) as needed
 - Write learning objectives & relevant information on board
 
 ### WORKSHOP AGENDA
@@ -53,6 +53,7 @@ creator:
 #### Instructor Bio
 
 Welcome to iOS Development 101! Here's a bit about me:
+
 > Provide your name and brief bio, including: your background in iOS development, any experience you've had with GA, and one "fun fact" about yourself.
 
 #### Introduce Yourselves
@@ -92,7 +93,9 @@ Before we dive in, a bit about you!
 
 iOS is the operating system that powers the iPhone and iPad. It's based on a set of frameworks and programming languages that power all of Apple's devices, including Macs and Macbooks (macOS, or until recently, Mac OS X), the Apple TV (tvOS), and the Apple Watch (watchOS). Learning iOS is a great starting point for gaining access to the rest of Apple's device ecosystem, and as Apple continues to standardize the frameworks that power these devices, the easier it is to build for all of them simultaneously by sharing code.
 
-iOS stems from a long history of Apple development for Mac. The most notable technology is Objective-C, a 30-year old programming language that still exists as a viable language for building apps for iOS and Mac. However, _Swift_ is the new language of choice for Apple development, being more approachable than Objective-C. It's a great way to build apps as well as learn programming if you're new to code. Here's a brief comparison:
+iOS stems from a long history of Apple development for Mac. The most notable technology is Objective-C, a 30-year old programming language that still exists as a viable language for building apps for iOS and Mac. However, _Swift_ is the new language of choice for Apple development, being more approachable than Objective-C. It's a great way to build apps as well as learn programming if you're new to code.
+
+Here's a brief comparison of the two languages that defines attributes of a user in both Objective-C and Swift.
 
 Objective-C:
 
@@ -132,6 +135,8 @@ class User {
 
 Much shorter and more readable!
 
+> Check: Have a student articulate the benefits of Swift. Then, have students predict why is also good to know Objective-C as a new iOS Developer. (For working on legacy apps.)
+
 ***
 
 <a name="demo1"></a>
@@ -142,8 +147,6 @@ Much shorter and more readable!
 Xcode is an integrated development environment (or IDE) made available to every Mac owner and contains nearly all of the tools necessary for building apps for iOS. It's essentially an app that contains all the tools for building apps.
 
 It is a combination of tools that work together (hence, "integrated") in a single place (hence, "environment") for developing apps and programs. By using Xcode, you can learn Swift, develop projects that work on any Apple device, and simulate those apps without having to own a mobile device, Apple watch, or Apple TV.
-
-> Slide showing a Swift Playground.
 
 Those tools integrated into Xcode consist of a code editor, "Playgrounds," Interface Builder, an iOS device simulator (or just, "simulator"), a debugging suite, and other various tools that help with editing various files that comprise an app (property lists, data schemas, etc.).
 
@@ -173,10 +176,14 @@ Xcode enables you to develop almost any aspect of an app in one place. Here are 
 
 In this course, we'll introduce you to building a simple app with Interface Builder and running it in the simulator (or on your device, if you so choose). This will enable you to deploy app prototypes on your phone and demonstrate them to others. We'll also give you some resources to continue your learning and dive into powering that app with actual Swift code.
 
+> Check: Have students turn to the person next to them and discuss, in their own words, how XCode relates to the different parts of the app outlined above.
+
 ***
 
 <a name="guided-practice1"></a>
 ## Guided Practice: Navigating your Xcode environment (15 mins)
+
+> Instructor Note: Have students open Xcode with you and make sure students are seeing the same thing you are displaying. Quickly show the different parts of the platform and then ask the to follow along as you do the following steps.
 
 ### Create an Xcode Project
 
@@ -197,9 +204,11 @@ The typical steps to create new project:
 There are four file types that come with an Xcode project.
 
 - `.swift` files, which contain app logic written in Swift.
-- `.storyboard` files, which will hold user interfaces.
-- `.plist` files, which are used for configuration.
+- `.storyboard` files, which will hold user interfaces (Scenes, text labels, labels, images, etc.).
 - `.xib` files, which hold individual, custom UI views.
+- `.plist` files, which are used for configuration.
+
+The last file type, Property Lists (.plist files), are a special kind of data file that can hold various pieces of information needed to configure an app, like the app's version, native language, the name of the actual executable file that will be installed on a user's iPhone, etc. We won't often have to edit these files, but they do come in handy.
 
 
 ### Introduction to Interface Builder
@@ -221,7 +230,7 @@ To disable Auto Layout:
 - Click on the View Controller.
 - In the Inspector panel on the right, click on the first icon, the File Inspector.
 - Near the middle of the panel, uncheck "Use Auto Layout."
-- Xcode will ask you if you want to disable "Size classes." Confirm this.
+- Xcode will prompt you to disable "Size classes." We can't use them with Springs-and-Struts, so just go ahead and click "Disable Size Classes."
 
 "Size classes" are a mechanism in Auto Layout that help you distinguish between classes of devices, like tall narrow screens, like for iPhone SE and 6S, or large, wider screens, like the iPad in landscape mode. When using Auto Layout, this enables you to manipulate the view layouts according to which class of device you're designing for. Here, however, we won't be using Auto Layout, so we don't need size classes.
 
@@ -252,10 +261,12 @@ When the simulator starts, try the following:
 
 This is how we'll build user interfaces. We'll add more Views, customize them, test them in the Simulator, and repeat. This way, you'll be able to see your entire app (or most of it), without having to write any code. Then at the end of the lesson, we'll make multiple Scenes and connect them together.
 
+> Check: Were students able to compile and launch the app? Were they able to click on the text field according to the direction above?
+
 ***
 
 <a name="ind-practice1"></a>
-## Independent Practice: "Test" your user interface skills (20 mins)
+## Practice in Pairs: "Test" your user interface skills (20 mins)
 
 Change the keyboard of the text field to an email entry.
 
@@ -265,7 +276,7 @@ Find a button in the UI library and add it below the password field. Double-clic
 
 Run the app in the iOS simulator. Verify that the top text field, when tapped, shows a keyboard that has an "@" symbol. Also verify that the password entry field obfuscates any typed characters.
 
-Tap on the button. Does it animate?
+> Check: See that each student was able to change the keyboard type and verify that it works in the simulator.
 
 ***
 
@@ -280,7 +291,7 @@ Putting an app together requires a variety of tools and processes. We have to de
 
 When we write code, Xcode provides facilities for us to test and prototype components of code that we write. They're called "Playgrounds," and they're one of the advantages of using Swift. They enable us to write code using Apple's frameworks, work with it interactively, then incorporate that code into our apps. It vastly cuts down on the time to learn and write Swift by giving us dynamic and interactive feedback.
 
-> You can take this opportunity to demonstrate a Playground. The students can follow along if you deem it useful. Writing simple arithmetic expressions that aren't too Swift-specific might be the best route. Point out that the answers on the right are displayed right next to the expressions that produce them.
+> Instructor Note: You can take this opportunity to demonstrate a Playground. The students can follow along if you deem it useful. Writing simple arithmetic expressions that aren't too Swift-specific might be the best route. Point out that the answers on the right are displayed right next to the expressions that produce them.
 
 To build user interfaces, we typically use Storyboards that contain more than one View Controller. Once you learn the basics, you'll be able to prototype entire apps and present them on your phone.
 
@@ -443,6 +454,7 @@ Here's how to add a detail scene:
 > Review Deliverables
 >
 > Encourage some students to share their apps with the class.
+> Distributed the [course handout](handout.pdf).
 
 > Review topics to cover in a discussion format.
 
