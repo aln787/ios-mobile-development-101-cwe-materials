@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFB69D981D35F0B5004B6E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69D971D35F0B5004B6E7F /* AppDelegate.swift */; };
+		AFB69D9A1D35F0B5004B6E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69D991D35F0B5004B6E7F /* ViewController.swift */; };
+		AFB69D9D1D35F0B5004B6E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB69D9B1D35F0B5004B6E7F /* Main.storyboard */; };
+		AFB69D9F1D35F0B5004B6E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB69D9E1D35F0B5004B6E7F /* Assets.xcassets */; };
+		AFB69DA21D35F0B5004B6E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DA01D35F0B5004B6E7F /* LaunchScreen.storyboard */; };
+		AFB69DB41D3DD7F5004B6E7F /* cute shiba closeup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAA1D3DD7F5004B6E7F /* cute shiba closeup.jpg */; };
+		AFB69DB51D3DD7F5004B6E7F /* happy shiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAB1D3DD7F5004B6E7F /* happy shiba.jpg */; };
+		AFB69DB61D3DD7F5004B6E7F /* red shiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAC1D3DD7F5004B6E7F /* red shiba.jpg */; };
+		AFB69DB71D3DD7F5004B6E7F /* sassy shiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAD1D3DD7F5004B6E7F /* sassy shiba.jpg */; };
+		AFB69DB81D3DD7F5004B6E7F /* shiba lying down.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAE1D3DD7F5004B6E7F /* shiba lying down.jpg */; };
+		AFB69DB91D3DD7F5004B6E7F /* Shiba-Inu (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DAF1D3DD7F5004B6E7F /* Shiba-Inu (1).jpg */; };
+		AFB69DBA1D3DD7F5004B6E7F /* shiba-inu-puppies3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DB01D3DD7F5004B6E7F /* shiba-inu-puppies3.jpg */; };
+		AFB69DBB1D3DD7F5004B6E7F /* Shiba_Inu_600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DB11D3DD7F5004B6E7F /* Shiba_Inu_600.jpg */; };
+		AFB69DBC1D3DD7F5004B6E7F /* smiling shiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DB21D3DD7F5004B6E7F /* smiling shiba.jpg */; };
+		AFB69DBD1D3DD7F5004B6E7F /* sporty shiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB69DB31D3DD7F5004B6E7F /* sporty shiba.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFB69D941D35F0B5004B6E7F /* DogList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB69D971D35F0B5004B6E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFB69D991D35F0B5004B6E7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFB69D9C1D35F0B5004B6E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFB69D9E1D35F0B5004B6E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFB69DA11D35F0B5004B6E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFB69DA31D35F0B5004B6E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB69DAA1D3DD7F5004B6E7F /* cute shiba closeup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cute shiba closeup.jpg"; sourceTree = "<group>"; };
+		AFB69DAB1D3DD7F5004B6E7F /* happy shiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy shiba.jpg"; sourceTree = "<group>"; };
+		AFB69DAC1D3DD7F5004B6E7F /* red shiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red shiba.jpg"; sourceTree = "<group>"; };
+		AFB69DAD1D3DD7F5004B6E7F /* sassy shiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sassy shiba.jpg"; sourceTree = "<group>"; };
+		AFB69DAE1D3DD7F5004B6E7F /* shiba lying down.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shiba lying down.jpg"; sourceTree = "<group>"; };
+		AFB69DAF1D3DD7F5004B6E7F /* Shiba-Inu (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shiba-Inu (1).jpg"; sourceTree = "<group>"; };
+		AFB69DB01D3DD7F5004B6E7F /* shiba-inu-puppies3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shiba-inu-puppies3.jpg"; sourceTree = "<group>"; };
+		AFB69DB11D3DD7F5004B6E7F /* Shiba_Inu_600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shiba_Inu_600.jpg; sourceTree = "<group>"; };
+		AFB69DB21D3DD7F5004B6E7F /* smiling shiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "smiling shiba.jpg"; sourceTree = "<group>"; };
+		AFB69DB31D3DD7F5004B6E7F /* sporty shiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sporty shiba.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFB69D911D35F0B5004B6E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFB69D8B1D35F0B5004B6E7F = {
+			isa = PBXGroup;
+			children = (
+				AFB69D961D35F0B5004B6E7F /* DogList */,
+				AFB69D951D35F0B5004B6E7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFB69D951D35F0B5004B6E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69D941D35F0B5004B6E7F /* DogList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFB69D961D35F0B5004B6E7F /* DogList */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69D971D35F0B5004B6E7F /* AppDelegate.swift */,
+				AFB69D991D35F0B5004B6E7F /* ViewController.swift */,
+				AFB69D9B1D35F0B5004B6E7F /* Main.storyboard */,
+				AFB69D9E1D35F0B5004B6E7F /* Assets.xcassets */,
+				AFB69DA01D35F0B5004B6E7F /* LaunchScreen.storyboard */,
+				AFB69DA31D35F0B5004B6E7F /* Info.plist */,
+				AFB69DA91D3DD7F5004B6E7F /* Shiba Pics */,
+			);
+			path = DogList;
+			sourceTree = "<group>";
+		};
+		AFB69DA91D3DD7F5004B6E7F /* Shiba Pics */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69DAA1D3DD7F5004B6E7F /* cute shiba closeup.jpg */,
+				AFB69DAB1D3DD7F5004B6E7F /* happy shiba.jpg */,
+				AFB69DAC1D3DD7F5004B6E7F /* red shiba.jpg */,
+				AFB69DAD1D3DD7F5004B6E7F /* sassy shiba.jpg */,
+				AFB69DAE1D3DD7F5004B6E7F /* shiba lying down.jpg */,
+				AFB69DAF1D3DD7F5004B6E7F /* Shiba-Inu (1).jpg */,
+				AFB69DB01D3DD7F5004B6E7F /* shiba-inu-puppies3.jpg */,
+				AFB69DB11D3DD7F5004B6E7F /* Shiba_Inu_600.jpg */,
+				AFB69DB21D3DD7F5004B6E7F /* smiling shiba.jpg */,
+				AFB69DB31D3DD7F5004B6E7F /* sporty shiba.jpg */,
+			);
+			path = "Shiba Pics";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFB69D931D35F0B5004B6E7F /* DogList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFB69DA61D35F0B5004B6E7F /* Build configuration list for PBXNativeTarget "DogList" */;
+			buildPhases = (
+				AFB69D901D35F0B5004B6E7F /* Sources */,
+				AFB69D911D35F0B5004B6E7F /* Frameworks */,
+				AFB69D921D35F0B5004B6E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogList;
+			productName = DogList;
+			productReference = AFB69D941D35F0B5004B6E7F /* DogList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFB69D8C1D35F0B5004B6E7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Anomalus;
+				TargetAttributes = {
+					AFB69D931D35F0B5004B6E7F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AFB69D8F1D35F0B5004B6E7F /* Build configuration list for PBXProject "DogList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFB69D8B1D35F0B5004B6E7F;
+			productRefGroup = AFB69D951D35F0B5004B6E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFB69D931D35F0B5004B6E7F /* DogList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFB69D921D35F0B5004B6E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB69DB41D3DD7F5004B6E7F /* cute shiba closeup.jpg in Resources */,
+				AFB69DBB1D3DD7F5004B6E7F /* Shiba_Inu_600.jpg in Resources */,
+				AFB69DA21D35F0B5004B6E7F /* LaunchScreen.storyboard in Resources */,
+				AFB69DBD1D3DD7F5004B6E7F /* sporty shiba.jpg in Resources */,
+				AFB69DB91D3DD7F5004B6E7F /* Shiba-Inu (1).jpg in Resources */,
+				AFB69DB61D3DD7F5004B6E7F /* red shiba.jpg in Resources */,
+				AFB69DB71D3DD7F5004B6E7F /* sassy shiba.jpg in Resources */,
+				AFB69D9F1D35F0B5004B6E7F /* Assets.xcassets in Resources */,
+				AFB69DB81D3DD7F5004B6E7F /* shiba lying down.jpg in Resources */,
+				AFB69DBA1D3DD7F5004B6E7F /* shiba-inu-puppies3.jpg in Resources */,
+				AFB69DB51D3DD7F5004B6E7F /* happy shiba.jpg in Resources */,
+				AFB69DBC1D3DD7F5004B6E7F /* smiling shiba.jpg in Resources */,
+				AFB69D9D1D35F0B5004B6E7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFB69D901D35F0B5004B6E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB69D9A1D35F0B5004B6E7F /* ViewController.swift in Sources */,
+				AFB69D981D35F0B5004B6E7F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFB69D9B1D35F0B5004B6E7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB69D9C1D35F0B5004B6E7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB69DA01D35F0B5004B6E7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB69DA11D35F0B5004B6E7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFB69DA41D35F0B5004B6E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFB69DA51D35F0B5004B6E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFB69DA71D35F0B5004B6E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DogList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anomalus.DogList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AFB69DA81D35F0B5004B6E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DogList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anomalus.DogList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFB69D8F1D35F0B5004B6E7F /* Build configuration list for PBXProject "DogList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB69DA41D35F0B5004B6E7F /* Debug */,
+				AFB69DA51D35F0B5004B6E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB69DA61D35F0B5004B6E7F /* Build configuration list for PBXNativeTarget "DogList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB69DA71D35F0B5004B6E7F /* Debug */,
+				AFB69DA81D35F0B5004B6E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFB69D8C1D35F0B5004B6E7F /* Project object */;
+}
