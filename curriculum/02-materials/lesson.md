@@ -185,7 +185,9 @@ In this course, we'll introduce you to building a simple app with Interface Buil
 
 > Instructor Note: Have students open Xcode with you and make sure students are seeing the same thing you are displaying. Quickly show the different parts of the platform and then ask the to follow along as you do the following steps.
 
-### Create an Xcode Project
+### Xcode Projects
+
+#### Create an Xcode Project
 
 An Xcode "project" contains everything needed to make one or more related apps. If you're building for iPhone, iPad, Apple TV, and a Mac, you can share code between those apps and deploy them to Apple's App Stores all from Xcode.
 
@@ -199,7 +201,7 @@ The typical steps to create new project:
 6. Finally, specify a place to save the folder into which all the project files will go. You can also leave "Create a Git Repository" unchecked.
 
 
-### What's in an Xcode project?
+#### What's in an Xcode project?
 
 There are four file types that come with an Xcode project.
 
@@ -244,7 +246,19 @@ To start learning how to build iOS apps, we’ll first tackle "views." Nearly ev
 
 A _View_ is a renderable element that has a size, has rules about how to draw and interact with it, and can contain other Views. A Button, for example, is tappable and can be rendered as text or an image. A Collection View, like the one in the Photos app, contains many square Image Views. Every View Controller by default has a single, empty View into which you add your own Views.
 
-> A possible exercise here is to have students pair up, open an app that they know (like Instagram or Facebook) and start breaking down the UI by the Views they see. Show the View catalog slide or have them page through the Interface Builder Library.
+## Guided Practice: Analyze an App's User Interface
+
+In pairs, at the whiteboards, open an app that you both know (like Instagram or Facebook) and break down the UI by the Views you see:
+
+- Draw a "wireframe" (just outlines) of the Scene you're interested in.
+- Label each "View" as you see it (e.g. label, text view, image, etc.).
+- Use the IB Library as your catalog of possible views.
+
+Present the wireframes to the rest of the class. Speculate with other class members different ways the Scene could have been constructed.
+
+> Instructor Note: There is a slide of available views extracted from the Library available in the slide deck. Although this is iOS 9, it may provide a good guide for students.
+
+## Individual Practice: Composing Views
 
 You'll build UIs by composing Views onto a Scene represented by a View Controller. In the Interface Builder Library, you'll find a number of prebuilt Views that come with the UIKit framework.
 
