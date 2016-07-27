@@ -1,8 +1,8 @@
 ---
 title: iOS Development 101
-duration: "1:25"
+duration: "3:00"
 creator:
-    name: John Doe
+    name: William Alan Martin
     city: NYC
 ---
 
@@ -24,7 +24,7 @@ creator:
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Review & modify [lesson plan](lesson-plan.md) & [slide deck](Slides.pdf) as needed
+- Review & modify lesson plan & [slide deck](Slides.pdf) as needed
 - Write learning objectives & relevant information on board
 
 ### WORKSHOP AGENDA
