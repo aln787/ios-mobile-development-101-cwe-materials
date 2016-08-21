@@ -494,7 +494,7 @@ Here's how to add a detail scene:
 
 #### What Should You Do Next?
 
-- Check out the learning resources at [Apple's Developer Site][https://developer.apple.com].
+- Check out the learning resources at [Apple's Developer Site](https://developer.apple.com).
 - Download Apple's [Swift iBook](https://itunes.apple.com/us/book/swift-programming-language/id1002622538?mt=11).
 - Watch videos from [WWDC](https://developer.apple.com/wwdc/).
 - Read more about [new Apple technologies](https://developer.apple.com/develop/).
@@ -512,6 +512,4 @@ Here's how to add a detail scene:
 
 ## ADDITIONAL RESOURCES
 
-- [a](#)
-- [b](#)
-- [c](#)
+- [Online Tutorials from  Ray Wenderlich](https://www.raywenderlich.com/)
